@@ -1,19 +1,7 @@
 users = new Meteor.Collection('userdays');
 
 Meteor.startup(function() {
-    moods.remove({});
-    moods.insert({
-        name: 'Happy',
-        image: 'happy.png'
-    },
-    {
-        name: 'Serious',
-        image: 'serious.png'
-    },
-    {
-        name: 'Sad',
-        image: 'sad.png'
-    })
+    
 })
 
 Meteor.methods({

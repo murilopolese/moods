@@ -48,7 +48,6 @@ function buildCalendar() {
     }
     return a;
 }
-
 function toggleClass($this) {
     if($this.hasClass('empty')==true) {
             $this.removeClass('empty');
@@ -68,4 +67,3 @@ function toggleClass($this) {
             return 'empty';
         }
 }
-

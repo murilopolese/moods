@@ -1,0 +1,49 @@
+<head>
+    <title>Everyday Mood</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="pull-right span2">
+                {{loginButtons}}
+            </div>
+        </div>
+        {{#if currentUser}}
+        {{> calendar}}
+        {{else}}
+        {{> welcome}}
+        {{/if}}
+    </div>
+</body>
+
+<template name="welcome">
+    <div class="row">
+        <div class="hero-unit">
+            <h1>How are you?</h1>
+            <br />
+            <p>Log in to answer and track your mood through the days.</p>
+            <p>Very inspired on this <a href="http://www.fastcodesign.com/1671445/infographic-this-emoticon-a-day-calendar-lets-you-creatively-catalog-your-mood">calendar</a></p>
+        </div>
+    </div>
+</template>
+
+<template name="calendar">
+    <div class="row">
+        {{#each days}}
+            {{#if isFirstDay day}}
+                <div class="day span1 blue" rel="{{month}}-{{day}}">
+            {{else}}
+                <div class="day span1 yellow" rel="{{month}}-{{day}}">
+            {{/if}}
+                    <div class="mood {{mood}}">
+                        {{day}}
+                    </div>
+                </div>
+        {{/each }}
+    </div>
+    {{myMoods}}
+</template>
+
+<template name="day">
+</template>

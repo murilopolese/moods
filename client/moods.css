@@ -1,0 +1,28 @@
+.hero-unit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.day {
+    cursor: pointer;
+    height: 100px;
+}
+.blue {
+    background: url(../defaultblue.png) no-repeat center center;
+}
+.yellow {
+    background: url(../default.png) no-repeat center center;
+}
+.mood {
+    height: 100%;
+    width: 100%;
+}
+.serious {
+    background: url(../serious.png) no-repeat center center;
+}
+.happy {
+    background: url(../happy.png) no-repeat center center;
+}
+.sad {
+    background: url(../sad.png) no-repeat center center;
+}

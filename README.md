@@ -1,4 +1,4 @@
-everydaymood
+Everyday Mood
 ============
 
-Meteor mood calendar very inspired by Brigada Creativa's calendars.
+Meteor mood calendar very inspired by this calendar (http://goo.gl/m0VHo).

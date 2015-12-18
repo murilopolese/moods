@@ -1,24 +1,27 @@
 <head>
 	<title>Moods</title>
 	<link rel="icon" type="image/png" href="http://cdn.jsdelivr.net/emojione/assets/png/1F636.png?v=1.2.4" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
 	<div class="container">
 		<div class="header">
 			<div class="row">
-				<div class="col-xs-12 col-sm-8">
+				<div class="col-xs-12">
 					<h1>Moods</h1>
-				</div>
-				<div class="col-xs-12 col-sm-4 text-right">
-					{{>loginButtons}}
 				</div>
 			</div>
 		</div>
 		{{#if currentUser}}
 			{{>calendar}}
 		{{/if}}
-</div>
+		<div class="row">
+			<div class="login col-xs-12">
+				{{>loginButtons}}
+			</div>
+		</div>
+	</div>
 </body>
 
 <template name="calendar">

@@ -34,8 +34,6 @@ Template.calendar.helpers({
 
 Template.calendar.events({
 	'click .day': function( e ) {
-		console.log( 123 );
-
 		var target = $( e.currentTarget );
 		var currentMood = target.data( 'mood' ) || ':no_mouth:';
 		var currentMoodIndex = moods.indexOf( currentMood );

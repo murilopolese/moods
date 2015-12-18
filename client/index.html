@@ -1,0 +1,35 @@
+<head>
+	<title>Moods</title>
+	<link rel="icon" type="image/png" href="http://cdn.jsdelivr.net/emojione/assets/png/1F636.png?v=1.2.4" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8">
+					<h1>Moods</h1>
+				</div>
+				<div class="col-xs-12 col-sm-4 text-right">
+					{{>loginButtons}}
+				</div>
+			</div>
+		</div>
+		{{#if currentUser}}
+			{{>calendar}}
+		{{/if}}
+</div>
+</body>
+
+<template name="calendar">
+		<div class="row">
+			{{#each days}}
+				<div class="col-xs-3 col-sm-2 col-md-1">
+					<div class="day {{todayClass this.index}}"
+						data-mood="{{this.mood}}" data-id="{{this._id}}">
+						{{{emoji this.mood}}}
+					</div>
+				</div>
+			{{/each}}
+		</div>
+</template>

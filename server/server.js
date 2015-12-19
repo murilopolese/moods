@@ -1,6 +1,5 @@
 Meteor.startup( function() {
 	console.log( 'Server started' );
-	Meteor.users.remove( {} );
 });
 
 Accounts.onCreateUser( function( opt, user ) {

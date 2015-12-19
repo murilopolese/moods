@@ -1,6 +1,8 @@
-Everyday Mood
+Everyday's Mood
 ============
 
-Meteor mood calendar very inspired by this calendar (http://goo.gl/m0VHo).
+Meteor moods calendar very inspired by this calendar (http://goo.gl/m0VHo).
 
-http://moods.meteor.com
+https://fabulous-moods.herokuapp.com
+
+!()[http://i.imgur.com/jcaU55H.jpg]

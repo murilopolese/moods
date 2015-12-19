@@ -15,6 +15,7 @@
 @black: #414141;
 @white: #F3F3F3;
 @background: #A4D3DD;
+@increment: 120px;
 
 // STYLES
 body {
@@ -28,22 +29,27 @@ a:link, a:visited, a:active, a:hover {
 
 .day {
 	.border-radius( 100% );
-	position: relative;
 	width: 100%;
-	margin-bottom: 1vw;
-	float: left;
+	margin-bottom: @increment / 4;
 	svg, object, img {
 		width: 100%;
-		height: 100%;
+		height: auto;
 		margin: 0;
 	}
 }
 
-.today {
+#today {
 	background: @black;
 }
 
-.login {
-	margin-top: 20px;
-	margin-bottom: 20px;
+.header {
+	h1 {
+		font-size: @increment / 2;
+		line-height: @increment;
+		margin: 0;
+	}
+}
+
+.footer {
+	height: @increment;
 }

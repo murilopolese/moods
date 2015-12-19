@@ -6,33 +6,45 @@
 
 <body>
 	<div class="container">
-		<div class="header">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1>Moods</h1>
-				</div>
-			</div>
-		</div>
+		{{>header}}
 		{{#if currentUser}}
 			{{>calendar}}
 		{{/if}}
-		<div class="row">
-			<div class="login col-xs-12">
-				{{>loginButtons}}
-			</div>
-		</div>
+		{{>footer}}
 	</div>
 </body>
 
+<template name="header">
+	<div class="header">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1><a href="#today">Moods</a></h1>
+			</div>
+		</div>
+	</div>
+</template>
+
 <template name="calendar">
+	<div class="content">
 		<div class="row">
 			{{#each days}}
 				<div class="col-xs-3 col-sm-2 col-md-1">
-					<div class="day {{todayClass this.index}}"
+					<div class="day" id="{{todayClass this.index}}"
 						data-mood="{{this.mood}}" data-id="{{this._id}}">
 						{{{emoji this.mood}}}
 					</div>
 				</div>
 			{{/each}}
 		</div>
+	</div>
+</template>
+
+<template name="footer">
+	<div class="footer">
+		<div class="row">
+			<div class="login col-xs-12">
+				{{>loginButtons}}
+			</div>
+		</div>
+	</div>
 </template>

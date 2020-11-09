@@ -1,0 +1,104 @@
+/* 1 */
+{
+    "_id" : "Pcbm3oPXdStdhffH6",
+    "createdAt" : ISODate("2015-12-19T11:38:55.152Z"),
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$H0G55sWNMTQ727PIzoTS8ehgGft18ym9DoxMYpqlP.sSm5WyPpBGu"
+        },
+        "resume" : {
+            "loginTokens" : []
+        }
+    },
+    "emails" : [ 
+        {
+            "address" : "",
+            "verified" : false
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : "Z5nhcRoWNZLDKWKrp",
+    "createdAt" : ISODate("2015-12-19T13:35:50.897Z"),
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$X1cxuLG9ln0Rs8NYGvp2c.mmDB8UKtzCMS79Tq/3iqHANVHA7nuIK"
+        },
+        "resume" : {
+            "loginTokens" : []
+        }
+    },
+    "emails" : [ 
+        {
+            "address" : "",
+            "verified" : false
+        }
+    ]
+}
+
+/* 3 */
+{
+    "_id" : "N6KBsHQvGRkTsA4tE",
+    "createdAt" : ISODate("2015-12-21T05:12:05.430Z"),
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$ERXc/1rovNR9k.liCF8SWOb0wmqMWXCzX4ZMpmWUVHPR8089VuzyW"
+        },
+        "resume" : {
+            "loginTokens" : []
+        }
+    },
+    "emails" : [ 
+        {
+            "address" : "",
+            "verified" : false
+        }
+    ]
+}
+
+/* 4 */
+{
+    "_id" : "TpuFDdQLwgg7TZc4w",
+    "createdAt" : ISODate("2016-05-20T10:07:37.089Z"),
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$IAVO1I/8Tq1.ZPzUf6Md.OPm3eP7j9xbliXjfrllAHo3F62nSCwWK"
+        },
+        "resume" : {
+            "loginTokens" : []
+        }
+    },
+    "emails" : [ 
+        {
+            "address" : "",
+            "verified" : false
+        }
+    ]
+}
+
+/* 5 */
+{
+    "_id" : "PDZahjSrCaeLEkKjF",
+    "createdAt" : ISODate("2020-05-29T12:40:50.590Z"),
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$oPnpe60q8xtlC1tiUoJWtufICNbltdvdu/xGP4JQLqqXHVbp5BfJC"
+        },
+        "resume" : {
+            "loginTokens" : [ 
+                {
+                    "when" : ISODate("2020-05-29T12:40:52.464Z"),
+                    "hashedToken" : "PLNW3STu3Ijj0k31V/oX0KnvPWJ+E4qJM22OPHjljis="
+                }
+            ]
+        }
+    },
+    "emails" : [ 
+        {
+            "address" : "",
+            "verified" : false
+        }
+    ]
+}
